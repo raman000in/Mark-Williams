@@ -100,3 +100,6 @@ if st.button('Submit'):
     # Save the graph as an HTML file
     html_file_path = "identity_constellation.html"
     pio.write_html(fig, file=html_file_path, auto_open=True)
+    
+    # Display the graph
+    st.plotly_chart(fig)
